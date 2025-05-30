@@ -1,0 +1,194 @@
+/* Use a clean, modern font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; /* Intel uses Segoe UI */
+  background: #f4f8fb; /* Light background for Intel look */
+  margin: 0;
+  color: #222;
+}
+
+/* Intel-branded header background and layout */
+.intel-header {
+  background-color: #0071c5; /* Intel's signature blue */
+  color: #fff; /* White text for contrast */
+  padding: 48px 0 36px 0; /* More space for a modern look */
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,113,197,0.08);
+}
+
+.header-content {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.intel-logo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.headline {
+  font-size: 2.7em;
+  margin: 0 0 18px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.subheading {
+  font-size: 1.25em;
+  margin: 0 0 10px 0;
+  color: #e0f0ff;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background: #fff;
+  border-bottom: 2px solid #e0f0ff;
+  box-shadow: 0 2px 8px rgba(0,113,197,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.navbar li {
+  margin: 0;
+}
+.navbar a {
+  display: block;
+  padding: 18px 10px;
+  color: #0071c5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+.navbar a:hover, .navbar a:focus {
+  color: #005792;
+  border-bottom: 2px solid #0071c5;
+  background: #e0f0ff;
+}
+
+/* Timeline section styles for horizontal and vertical layout */
+section#timeline {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 32px 0 24px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #0071c5 #e0f0ff;
+  scroll-snap-type: x mandatory;
+}
+
+section#timeline > div {
+  background: #fff;
+  color: #222;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,113,197,0.08);
+  min-width: 250px;
+  max-width: 250px;
+  flex: 0 0 250px;
+  padding: 22px 18px 18px 18px;
+  box-sizing: border-box;
+  transition: transform 0.3s cubic-bezier(0.4,0.2,0.2,1),
+              box-shadow 0.3s cubic-bezier(0.4,0.2,0.2,1),
+              background 0.3s;
+  border: 1px solid #e0f0ff;
+  font-size: 1em;
+  scroll-snap-align: start;
+}
+
+section#timeline > div:hover {
+  transform: translateY(-10px) scale(1.04) rotate(-1deg); /* Subtle lift, scale, and tilt */
+  box-shadow: 0 8px 32px rgba(0,113,197,0.18), 0 1.5px 8px rgba(0,0,0,0.10); /* Stronger shadow */
+  background: #f0f8ff; /* Very light blue highlight */
+}
+
+section#timeline > div .card-details {
+  display: none;
+  background: #e0f0ff;
+  color: #005792;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 0.95em;
+  box-shadow: 0 1px 4px rgba(0,113,197,0.08);
+}
+section#timeline > div:hover .card-details {
+  display: block;
+  animation: fadeInDetails 0.4s;
+}
+@keyframes fadeInDetails {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section#timeline > div h2 {
+  color: #0071c5;
+  font-size: 1.3em;
+  margin: 0 0 6px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+section#timeline > div h3 {
+  color: #005792;
+  font-size: 1.1em;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+section#timeline > div img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+section#timeline > div p {
+  font-size: 0.98em;
+  line-height: 1.5;
+  margin: 0;
+  color: #333;
+}
+
+@media (max-width: 700px) {
+  section#timeline {
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: visible;
+  }
+  section#timeline > div {
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+}
+
+/* About and Contact section styling */
+section#about, section#contact {
+  background: #fff;
+  border-radius: 12px;
+  margin: 32px auto 0 auto;
+  max-width: 700px;
+  box-shadow: 0 2px 12px rgba(0,113,197,0.06);
+  padding: 36px 24px 24px 24px;
+  color: #222;
+}
+section#about h2, section#contact h2 {
+  color: #0071c5;
+  margin-bottom: 12px;
+}
+section#about p, section#contact p {
+  font-size: 1.08em;
+  color: #333;
+}
