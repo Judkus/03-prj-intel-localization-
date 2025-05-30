@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif; /* Intel uses Segoe UI */
   background: #f4f8fb; /* Light background for Intel look */
   margin: 0;
-  color: #222;
+  color: #111; /* Darker text for better contrast */
 }
 
 /* Intel-branded header background and layout */
@@ -191,4 +191,89 @@ section#about h2, section#contact h2 {
 section#about p, section#contact p {
   font-size: 1.08em;
   color: #333;
+}
+
+/* Style for the 'Learn More' buttons in the three-column layout */
+.btn {
+  font-size: 1.1em; /* Make the button text a bit larger for readability */
+  border-radius: 25px; /* Rounded corners for a friendly look */
+  padding: 8px 24px; /* More padding for a bigger button */
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary, .btn-success, .btn-info {
+  /* Use darker shades for better contrast */
+  border: none;
+}
+.btn-primary {
+  background-color: #0056b3;
+}
+.btn-primary:hover {
+  background-color: #003d80;
+}
+.btn-success {
+  background-color: #218838;
+}
+.btn-success:hover {
+  background-color: #145c25;
+}
+.btn-info {
+  background-color: #117a8b;
+}
+.btn-info:hover {
+  background-color: #0b5c6b;
+}
+.btn-primary:hover, .btn-success:hover, .btn-info:hover {
+  filter: brightness(0.9); /* Slightly darken on hover for feedback */
+}
+
+/* Footer styles */
+footer {
+  background-color: #0071c5;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+footer h2 {
+  font-size: 1.8em;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+footer p {
+  font-size: 1em;
+  margin: 0 0 16px 0;
+  color: #e0f0ff;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #e0f0ff;
+}
+
+/* Improve color contrast for accessibility */
+.bg-light {
+  background-color: #f8f9fa !important; /* Slightly lighter for more contrast with text */
+}
+
+footer.bg-dark {
+  background-color: #222 !important; /* Even darker for strong contrast */
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Optional: Add a little margin between icon and text in headings */
+h2 > .bi {
+  margin-left: 8px;
+  margin-right: 0;
 }

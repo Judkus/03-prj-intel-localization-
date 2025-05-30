@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl"> <!-- 'dir="rtl"' enables right-to-left text flow -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <!-- Add Bootstrap RTL CSS for right-to-left support -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Add Bootstrap Icons CDN for easy icon usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -42,7 +46,7 @@
     <div>
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="AI-generated image of Intel's founding in 1968" />
+      <img src="img/1.jpg" alt="تأسيس شركة إنتل عام 1968" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -58,7 +62,7 @@
     <div>
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="AI-generated image of the first microprocessor, 1971" />
+      <img src="img/2.jpg" alt="أول معالج دقيق من إنتل عام 1971" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -73,7 +77,7 @@
     <div>
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="AI-generated image of the 8086 processor, 1978" />
+      <img src="img/3.jpg" alt="معالج 8086 من إنتل عام 1978" />
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -87,7 +91,7 @@
     <div>
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="AI-generated image of the 386 processor, 1985" />
+      <img src="img/4.jpg" alt="معالج 386 من إنتل عام 1985" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -102,7 +106,7 @@
     <div>
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="img/umberto-jXd2FSvcRr8-unsplash.jpg" alt="AI-generated image representing sustainability efforts, 2006" />
+      <img src="img/umberto-jXd2FSvcRr8-unsplash.jpg" alt="جهود الاستدامة في إنتل عام 2006" />
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -118,7 +122,7 @@
     <div>
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="img/christian-wiediger-CKpBhTXvLis-unsplash.jpg" alt="AI-generated image representing Intel's RISE strategy, 2020" />
+      <img src="img/christian-wiediger-CKpBhTXvLis-unsplash.jpg" alt="استراتيجية RISE من إنتل عام 2020" />
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -133,7 +137,7 @@
     <div>
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="img/niclas-illg-6vA8GCbbtL0-unsplash.jpg" alt="AI-generated image representing net-zero goals, 2022" />
+      <img src="img/niclas-illg-6vA8GCbbtL0-unsplash.jpg" alt="أهداف صافي الانبعاثات الصفرية لإنتل عام 2022" />
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -148,7 +152,7 @@
     <div>
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="img/thomas-jensen-GztZ77a0tAM-unsplash.jpg" alt="AI-generated image representing renewable electricity, 2023" />
+      <img src="img/thomas-jensen-GztZ77a0tAM-unsplash.jpg" alt="الكهرباء المتجددة في إنتل عام 2023" />
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -163,7 +167,7 @@
     <div>
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="img/alexandru-acea-GhwCef9VRr4-unsplash.jpg" alt="AI-generated image representing a sustainability summit, 2024" />
+      <img src="img/alexandru-acea-GhwCef9VRr4-unsplash.jpg" alt="قمة الاستدامة لإنتل عام 2024" />
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -187,5 +191,170 @@
     <h2>Contact</h2>
     <p>For more information, visit <a href="https://www.intel.com" target="_blank">intel.com</a>.</p>
   </section>
+
+  <!-- Three-column responsive layout using Bootstrap grid -->
+  <section class="container mt-5">
+    <div class="row">
+      <!-- First column -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="p-3 border bg-light">
+          <!-- Add an icon before the heading text -->
+          <h2><i class="bi bi-cpu"></i> Column 1</h2>
+          <p>This is the first column. On small screens, it takes the full width. On medium and larger screens, it takes one-third of the row.</p>
+          <!-- Learn More link styled with Bootstrap button classes -->
+          <a href="#" class="btn btn-primary mt-2">Learn More</a> <!-- 'Learn More' in Arabic -->
+        </div>
+      </div>
+      <!-- Second column -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="p-3 border bg-light">
+          <h2><i class="bi bi-bar-chart"></i> Column 2</h2>
+          <p>This is the second column. It behaves the same as the first column and adapts to screen size.</p>
+          <a href="#" class="btn btn-success mt-2">Learn More</a>
+        </div>
+      </div>
+      <!-- Third column -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="p-3 border bg-light">
+          <h2><i class="bi bi-globe"></i> Column 3</h2>
+          <p>This is the third column. Try resizing your browser window to see how the layout changes!</p>
+          <a href="#" class="btn btn-info mt-2 text-white">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of three-column layout -->
+
+  <!-- Newsletter Subscription Form using Bootstrap -->
+  <section class="container my-5">
+    <!-- Beginner comment: This is a simple form for newsletter subscription -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card p-4 shadow-sm">
+          <h2 class="mb-3 text-center"><i class="bi bi-envelope"></i> Subscribe to the Sustainability Newsletter</h2>
+          <form aria-label="Newsletter Subscription Form" autocomplete="on">
+            <div class="mb-3">
+              <label for="subscriberName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="subscriberName" name="subscriberName" placeholder="Enter your name here" required aria-required="true" autocomplete="name">
+            </div>
+            <div class="mb-3">
+              <label for="subscriberEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="subscriberEmail" name="subscriberEmail" placeholder="Enter your email here" required aria-required="true" autocomplete="email">
+            </div>
+            <button type="submit" class="btn btn-primary w-100" aria-label="Subscribe to the newsletter now">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Newsletter Subscription Form -->
+
+  <!-- Bootstrap Accordion: Frequently Asked Questions -->
+  <section class="container my-5">
+    <h2 class="mb-4 text-center"><i class="bi bi-question-circle"></i> Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+            What is sustainability at Intel?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sustainability at Intel means developing technologies and products that help protect the environment and reduce environmental impact.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            How can I subscribe to the newsletter?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can subscribe by filling out the form on this page and entering your name and email address.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            Where can I find more information about Intel's initiatives?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can visit the <a href="https://www.intel.com" target="_blank" rel="noopener">official Intel website</a> to learn about the latest initiatives.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Bootstrap Accordion -->
+
+  <!-- Accessibility improvement: Add aria-labels and roles to footer navigation -->
+  <footer class="bg-dark text-white text-center py-3 mt-5" role="contentinfo">
+    <div class="container">
+      <nav class="mb-2" aria-label="Footer Links">
+        <!-- Beginner comment: These are placeholder links for site policies -->
+        <a href="#" class="text-white mx-2 text-decoration-underline" aria-label="Privacy Policy">Privacy Policy</a>
+        <span aria-hidden="true">|</span>
+        <a href="#" class="text-white mx-2 text-decoration-underline" aria-label="Terms of Use">Terms of Use</a>
+        <span aria-hidden="true">|</span>
+        <a href="#contact" class="text-white mx-2 text-decoration-underline" aria-label="Contact Us">Contact Us</a>
+      </nav>
+      <small>&copy; 2025 Intel. All rights reserved.</small>
+    </div>
+  </footer>
+  <!-- End of footer -->
+
+  <!-- Bootstrap Modal: Welcome message for users -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="welcomeModalLabel">Welcome to Intel's Sustainability Journey!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Discover how Intel has helped build a more sustainable future through innovation and technology.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Start Exploring</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show the modal automatically on first page load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var modal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+      modal.show();
+    });
+  </script>
+
+  <!-- Script to detect language changes and apply RTL if needed -->
+  <script>
+    // Beginner-friendly: This script checks the page language and sets RTL if the language is Arabic, Hebrew, Persian, or Urdu
+    function setRTLIfNeeded() {
+      // List of RTL language codes
+      const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+      // Get the current language from the <html> tag
+      const html = document.documentElement;
+      const lang = html.lang ? html.lang.toLowerCase().split('-')[0] : '';
+      if (rtlLangs.includes(lang)) {
+        html.setAttribute('dir', 'rtl');
+      } else {
+        html.setAttribute('dir', 'ltr');
+      }
+    }
+
+    // Run on page load
+    setRTLIfNeeded();
+    // Also check every second in case Google Translate or other tools change the language
+    setInterval(setRTLIfNeeded, 1000);
+  </script>
 </body>
 </html>
