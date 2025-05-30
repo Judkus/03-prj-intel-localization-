@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
   <!-- Add Bootstrap RTL CSS for right-to-left support -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
   <!-- Add Bootstrap Icons CDN for easy icon usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css" />
@@ -199,7 +200,7 @@
       <div class="col-12 col-md-4 mb-4">
         <div class="p-3 border bg-light">
           <!-- Add an icon before the heading text -->
-          <h2><i class="bi bi-cpu"></i> Column 1</h2>
+          <h2><i class="bi bi-cpu"></i> rise strategy</h2>
           <p>This is the first column. On small screens, it takes the full width. On medium and larger screens, it takes one-third of the row.</p>
           <!-- Learn More link styled with Bootstrap button classes -->
           <a href="#" class="btn btn-primary mt-2">Learn More</a> <!-- 'Learn More' in Arabic -->
@@ -293,6 +294,44 @@
   </section>
   <!-- End of Bootstrap Accordion -->
 
+  <!-- Language Detection and Change Section -->
+  <section class="container my-5">
+    <h2 class="mb-3 text-center"><i class="bi bi-translate"></i> Language Detection & Change</h2>
+    <div class="alert alert-info text-center" id="currentLanguageInfo">
+      <!-- This will be filled by JavaScript -->
+    </div>
+    <div class="text-center">
+      <label for="languageSelect" class="form-label">Change page language:</label>
+      <select id="languageSelect" class="form-select w-auto d-inline-block" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+        <option value="he">Hebrew</option>
+        <option value="fa">Persian</option>
+        <option value="ur">Urdu</option>
+      </select>
+    </div>
+  </section>
+  <script>
+    // Show current language info
+    function updateLanguageInfo() {
+      const lang = document.documentElement.lang || 'en';
+      const langNames = {
+        en: 'English', ar: 'Arabic', he: 'Hebrew', fa: 'Persian', ur: 'Urdu'
+      };
+      document.getElementById('currentLanguageInfo').textContent =
+        'Current page language: ' + (langNames[lang] || lang);
+      // Set dropdown to match current language
+      document.getElementById('languageSelect').value = lang;
+    }
+    // Change language when user selects from dropdown
+    document.getElementById('languageSelect').addEventListener('change', function(e) {
+      document.documentElement.lang = e.target.value;
+      updateLanguageInfo();
+    });
+    // Initialize info on page load
+    updateLanguageInfo();
+  </script>
+
   <!-- Accessibility improvement: Add aria-labels and roles to footer navigation -->
   <footer class="bg-dark text-white text-center py-3 mt-5" role="contentinfo">
     <div class="container">
@@ -356,5 +395,6 @@
     // Also check every second in case Google Translate or other tools change the language
     setInterval(setRTLIfNeeded, 1000);
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
