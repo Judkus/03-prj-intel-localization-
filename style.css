@@ -243,6 +243,21 @@ h2 > .bi {
   }
 }
 
+/* Timeline horizontal scroll on large screens, vertical stack on small screens */
+#timeline {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+#timeline > div {
+  min-width: 340px;
+  flex: 0 0 340px;
+  scroll-snap-align: start;
+}
+
 @media (max-width: 900px) {
   #timeline {
     flex-direction: column;
