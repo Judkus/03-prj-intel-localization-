@@ -256,44 +256,6 @@
   </section>
   <!-- End of Bootstrap Accordion -->
 
-  <!-- Language Detection and Change Section -->
-  <section class="container my-5">
-    <h2 class="mb-3 text-center"><i class="bi bi-translate"></i> Language Detection & Change</h2>
-    <div class="alert alert-info text-center" id="currentLanguageInfo">
-      <!-- This will be filled by JavaScript -->
-    </div>
-    <div class="text-center">
-      <label for="languageSelect" class="form-label">Change page language:</label>
-      <select id="languageSelect" class="form-select w-auto d-inline-block" aria-label="Select language">
-        <option value="en">English</option>
-        <option value="ar">Arabic</option>
-        <option value="he">Hebrew</option>
-        <option value="fa">Persian</option>
-        <option value="ur">Urdu</option>
-      </select>
-    </div>
-  </section>
-  <script>
-    // Show current language info
-    function updateLanguageInfo() {
-      const lang = document.documentElement.lang || 'en';
-      const langNames = {
-        en: 'English', ar: 'Arabic', he: 'Hebrew', fa: 'Persian', ur: 'Urdu'
-      };
-      document.getElementById('currentLanguageInfo').textContent =
-        'Current page language: ' + (langNames[lang] || lang);
-      // Set dropdown to match current language
-      document.getElementById('languageSelect').value = lang;
-    }
-    // Change language when user selects from dropdown
-    document.getElementById('languageSelect').addEventListener('change', function(e) {
-      document.documentElement.lang = e.target.value;
-      updateLanguageInfo();
-    });
-    // Initialize info on page load
-    updateLanguageInfo();
-  </script>
-
   <!-- Accessibility improvement: Add aria-labels and roles to footer navigation -->
   <footer class="bg-dark text-white text-center py-3 mt-5" role="contentinfo">
     <div class="container">
